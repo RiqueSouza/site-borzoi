@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meu Site de Vendas</title>
+  <link rel="stylesheet" href="ff.css">
+      <!--Links e importações de ícones-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="ff.js"></script>
+  <script src="scroll-products.js"></script>
+  <script src="cat-scroll.js"></script>
+</head>
+<body>
+  <!--Menu side-bar-->
+
+  <nav>
+    <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">Borzoi</span>
+
+        <div class="search-container">
+            <input type="search" id="search-input" placeholder="Pesquise a categoria">
+            <ul id="autocomplete-list"></ul>
+            <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+        
+        </div>
+     </div>
+     
+     
+      <span class="options"> 
+        <i class='bx bxl-telegram icon-opt'></i>
+        <a href="contato.html">Suporte</a> 
+      </span>
+
+        <span class="options">
+          <i class='bx bx-heart icon-opt'></i>
+          <a href="">Favoritos</a>
+        </span>
+
+       <span class="options">
+        <i class='bx bx-cart icon-opt'></i>
+        <a href="#">Carrinho</a>
+      </span>
+
+    <div class="sidebar">
+        <div class="logo1">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name1">Borzoi</span>
+        </div>
+        <div class="sidebar-content">
+            <ul class="lists">
+                <li class="list">
+                    <a href="#" class="nav-link">
+                      <i class='bx bx-category-alt icon'></i>
+                        <span class="link">Categoria</span>
+                    </a>
+                    <ul class="subtopics">
+                        <li class="subtopic"><a href="#brac">Bracelets</a></li>
+                        <li class="subtopic"><a href="#clock">Clockwatch</a></li>
+                        <li class="subtopic"><a href="#ear">Earring</a></li>
+                        <li class="subtopic"><a href="#ring">Ring</a></li>
+                    </ul>
+                </li>
+                <hr>
+                <li class="list">
+                  <a href="ofertas.html">
+                    <i class='bx bxs-offer icon'></i>
+                    Ofertas</a>
+                 
+                </li>
+                <li class="list">
+                    <a href="#">
+                      <i class='bx bx-purchase-tag-alt icon'></i>
+                      Seus Produtos
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <i class='bx bx-heart icon'></i>
+                       Favoritos
+                    </a>
+                </li>
+            <hr>
+            <div class="bottom-content">
+                <li class="list">
+                    <a href="contato.html">
+                      <i class='bx bxl-telegram icon'></i>
+                       Contato
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="Texte.html">
+                      <i class='bx bx-info-circle icon'></i>
+                      Sobre
+                    </a>
+                </li>   
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="overlay"></section>
+<div class="container-produtos" data-name="Bracelets" id="brac">
+  <div class="title-category">
+    <h1>Bracelets</h1>
+  </div>
+</div>
+<div class="category">
+
+  <div class="product-card">
+    <img src="images/bracelets-pandora.webp" alt="Product Image">
+    <h2 class="product-title">	
+      Bracelete Pandora Moments Celebração</h2>
+    <p class="product-price">$859.99</p>
+    <p class="product-description">Uma parte da herança Pandora de longa data, com uma mega atualização moderna e a reimaginamos com detalhes mais elegantes.</p>
+  </div>
+
+
+  <div class="product-card">
+    <img src="images/bracelet-couro.webp" alt="Product Image">
+    <h2 class="product-title">Bracelet Tressê Blue Gold</h2>
+    <p class="product-price">$469.99</p>
+    <p class="product-description">Bracelet Tressê Blue Gold  é uma bela escolha para os apreciadores, sua estrutura é leve e confortável, uma característica desta nossa linha tressê.</p>
+  </div>
+
+  <div class="product-card">
+    <img src="images/bracelet-men.webp" alt="Product Image" class="product-image">
+    <h3 class="product-title">Pulseira Limited Preta</h3>
+    <div class="price-container">
+      <span class="original-price">$249.99</span>
+      <span class="sale-price">$212.49</span>
+      <div class="price-line"></div>
+    </div>
+    <p class="product-description">A Pulseira Limited Preta W.Buscatti é feita em aço trançado na cor preta e possui detalhes e ponteiras banhadas a Ouro 18K.</p>
+  </div>
+</div>
+</div>
+<div class="container-produtos" data-name="Clockwatch" id="clock">
+  <div class="title-category">
+    <h1>Clockwatch</h1>
+  </div>
+</div>
+<section>
+  <div class="container reveal">
+<div class="category">
+  
+  <div class="product-card">
+    <img src="images/clock-olivia.webp" alt="Product Image">
+    <h2 class="product-title">Relógio Olivia Burton</h2>
+    <p class="product-price">$900.00</p>
+    <p class="product-description">Inspiração Relógios Olivia Burton Olivia Burton é uma marca inglesa de acessórios fundada pelas melhores amigas Jemma e Lessa.</p>
+  </div>
+
+
+  <div class="product-card">
+    <img src="images/clock-shelby.webp" alt="Product Image">
+    <h2 class="product-title">Relógio Shelby silver</h2>
+    <p class="product-price">$349.90</p>
+    <p class="product-description">Fortemente inspirado no personagem Thomas Shelby, do seriado “Peaky Blinders”, o relógio masculino Shelby é uma peça minimalista. </p>
+  </div>
+
+  <div class="product-card">
+    <img src="images/clock-silver.webp" alt="Product Image" class="product-image">
+    <h3 class="product-title">Relógio Madison Silver</h3>
+    <div class="price-container">
+      <span class="original-price">$489.99</span>
+      <span class="sale-price">$415.49</span>
+      <div class="price-line"></div>
+    </div>
+    <p class="product-description">A coleção Madison reinventa um estilo clássico para uma nova era. As peças desta coleção são simples e versáteis, tornando-a perfeita para um visual casual ou elegante. </p>
+  </div>
+</div>
+
+</section>
+<div class="container-produtos" data-name="Earring" id="ear">
+  <div class="title-category">
+    <h1>Earring</h1>
+  </div>
+</div>
+<section>
+  <div class="container reveal">
+
+<div class="category" >
+
+  <div class="product-card" >
+    <img src="Water.jpg" alt="Product Image">
+    <h2 class="product-title">Brinco Water Drop silver</h2>
+    <p class="product-price">$219.99</p>
+    <p class="product-description">Sinta a fluidez com os mínimos detalhes possíveis com essa peça que visa uma simples gota d'água.</p>
+  </div>
+
+
+  <div class="product-card" >
+    <img src="Cruz.webp" alt="Product Image">
+    <h2 class="product-title">Brinco Cross silver</h2>
+    <p class="product-price">$555.90</p>
+    <p class="product-description">Esbanje estilo em sua crença com os novos brincos que reluzem até o mais forte brilho.</p>
+  </div>
+
+  <div class="product-card">
+    <img src="Balance.webp" alt="Product Image" class="product-image">
+    <h3 class="product-title">Brinco Balance gold</h3>
+    <div class="price-container">
+      <span class="original-price">$665.99</span>
+      <span class="sale-price">$444.90</span>
+      <div class="price-line"></div>
+    </div>
+    <p class="product-description">Belo, não é? Perfeitamente balanceado. Como todas coisas deveriam ser.</p>
+  </div>
+</div>
+  </div>
+</section>
+
+<div class="container-produtos" data-name="Ring" id="ring">
+  <div class="title-category">
+    <h1>Ring</h1>
+  </div>
+</div>
+<section>
+  <div class="container reveal">
+
+<div class="category">
+
+  <div class="product-card">
+    <img src="moon.webp" alt="Product Image">
+    <h2 class="product-title">Anel Dark Half Moon</h2>
+    <p class="product-price">$177.70</p>
+    <p class="product-description">A peça que expressa seu lado obscuro reluzindo um brilho inocente, mas ninguém sabe a real verdade. </p>
+  </div>
+
+
+  <div class="product-card">
+    <img src="love.webp" alt="Product Image">
+    <h2 class="product-title">Anel Golden Fallen Love</h2>
+    <p class="product-price">$899.90</p>
+    <p class="product-description">Um sentimento amoroso preso em seus dedos. O amor não é fácil de se obter, consiga e não solte mais.</p>
+  </div>
+
+  <div class="product-card">
+    <img src="carbono silver.webp" alt="Product Image" class="product-image">
+    <h3 class="product-title">Anel Pure Carbon silver</h3>
+    <div class="price-container">
+      <span class="original-price">$351.90</span>
+      <span class="sale-price">$250.99</span>
+      <div class="price-line"></div>
+    </div>
+    <p class="product-description"> Leve e ganancioso, uma das peças all black mais desejadas. Como pode brilhar tanto sendo tão escuro?</p>
+  </div>
+</div>
+</div>
+</section>
+<!--Parte final da marcação do site: Footer-->
+<footer class="footer">
+  <div class="contf">
+      <div class="row">
+          <div class="footer-col">
+              <h4>Loja</h4>
+              <ul>
+                  <li><a href="Texte.html">Sobre</a></li>
+                  <li><a href="Política de Privacidade.pdf" target="_blank">Política de privacidade</a></li
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Contato</h4>
+              <ul>
+                  <li><a href="https://wa.me/5519971529588" target="_blank">SAC: <br>
+                    (19)97152-9588</a></li>
+                  <li><a href="mailto:contatoborzoi@gmail.com">Suporte: <br>
+                 contatoborzoi@gmail.com</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Produtos</h4>
+              <ul>
+                  <li><a href="#brac">Bracelets</a></li>
+                  <li><a href="#clock">Clockwatch</a></li>
+                  <li><a href="#ear">Earring</a></li>
+                  <li><a href="#ring">Ring</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+
+              <h4>follow us</h4>                
+              <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+   <p class="direitos">©2023 todos os direitos reservados</p>
+</footer>
+
+
+
+  <!---Funções em Javascript do menu sidebar e da barra de pesquisa-->
+  <script>
+    const navBar = document.querySelector("nav");
+    menuBtns = document.querySelectorAll(".menu-icon");
+    overlay = document.querySelectorAll(".overlay");
+ 
+    menuBtns.forEach(menuBtn => {
+        menuBtn.addEventListener("click",() => {
+            navBar.classList.toggle("open");  
+        })
+    });
+
+    overlay.addEventListener("click",() => {
+        navBar.classList.remove("open");
+    })
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+
+    searchInput.addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        const products = document.getElementsByClassName('container-produtos');
+
+        for (let i = 0; i < products.length; i++) {
+          const product = products[i];
+          const productName = product.getAttribute('data-name').toLowerCase();
+          if (productName === searchTerm) {
+            const productOffsetTop = product.offsetTop;
+            window.scrollTo({ top: productOffsetTop, behavior: 'smooth' });
+            break;
+          }
+        }
+      }
+    });
+  });
+</script>
+<script>
+  const menuBtns = document.querySelectorAll(".menu-icon");
+const overlay = document.querySelector(".overlay");
+const nav1Bar = document.querySelector("nav");
+const mainContent = document.querySelector("main");
+
+menuBtns.forEach(menuBtn => {
+  menuBtn.addEventListener("click", () => {
+    nav1Bar.classList.toggle("open");
+    mainContent.classList.toggle("menu-open");
+  });
+});
+
+overlay.addEventListener("click", () => {
+  nav1Bar.classList.remove("open");
+  mainContent.classList.remove("menu-open");
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+ }
+
+ body{
+     background: #24262b;
+   
+ }
+
+ 
+ 
+
+ section{
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .b{
+  height: 400px;
+  border-radius: 50px;
+ }
+
+ 
+ section:nth-child(1) {
+    color: #32b6a9de;
+    background-image: url(images/oks.jpg);
+   
+ }
+
+ 
+
+ section:nth-child(2){
+    color: #333333;
+    background: #D9D7D9;
+ }
+
+ section:nth-child(3){
+    color: #fff;
+  
+ }
+
+ section:nth-child(4){
+    color: #333333;
+    background: #D9D7D9;
+ }
+
+ section .container{
+    margin: 100px;
+ }
+
+
+ section h4{
+
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/oks.jpg);
+   background-position: center;
+   background-size: cover;
+   padding-left: 8%;
+   padding-right: 8px;
+   box-sizing: border-box;
+ }
+ header{
+  position: fixed;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1;
+
+ }
+ .navbar{
+   height: 12%;
+   display: flex;
+   align-items: center;
+   padding-right:50px;
+
+ }
+
+ .Logo{
+   width: 80px;
+   cursor: pointer;
+ }
+
+ .menu-icon{
+   width: 100px;
+   cursor: pointer;
+   margin-left: 40px;
+   font-size: 36px;
+ }
+
+ nav{
+   flex: 1;
+   text-align:right;
+   
+ }
+nav ul{
+  margin-left: 1100px;
+}
+ nav ul li{
+   list-style: none;
+   display: inline-block;
+   margin-left: 60px;
+ }
+
+ nav ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 22px;
+   
+   
+ }
+
+ .row{
+   display: flex;
+   height: 88%;
+   align-items: center;
+ }
+
+ .col{
+   flex-basis: 50%;
+ }
+
+ h1{
+   color: #fff;
+   font-size: 100px;
+   text-shadow: 3px 4px 2px black;
+   
+ }
+
+ .geral{
+   color: #fff;
+   font-size: 20px;
+   line-height: 15px;
+   text-shadow: 1px 1px 2px black;
+ }
+
+ .geral1{
+  color: #ffffff;
+   font-size: 18px;
+   line-height: 15px;
+   text-shadow: 1px 1px 2px black;
+ }
+
+ button{
+   width: 180px;
+   color: #000;
+   font-size: 15px;
+   padding: 12px 0;
+   background:#24262b;
+   border: 0;
+   border-radius: 20px;
+   outline: none;
+   margin-top: 30px;
+   cursor: pointer;
+ }
+
+
+ .card{
+   width: 310px;
+   height: 305px;
+   display: inline-block;
+   border-radius: 14px;
+   padding: 15px 25px;
+   box-sizing: border-box;
+
+   margin: 14px 18px;
+   background-position: center;
+   background-size: cover;
+   transition: transform 0.5s;
+   
+
+ }
+
+ .cards{
+
+  font-size: 40px;
+  text-shadow: 1px 1px 2px black;
+ }
+
+
+
+ .card:hover{
+   transform: translateY(-15px)
+
+ }
+
+ .card1{
+   background-image: url(images/bracelet-home.jpeg);
+ }
+ .card2{
+   background-image: url(images/clock-home.jpeg);
+ }
+ .card3{
+   background-image: url(brinc.webp);
+ }
+ .card4{
+   background-image: url(ear.webp);
+ }
+
+ h5{
+   color: #fff;
+   text-shadow: 0 0 5px #999;
+   font-size: 18px;
+   
+ }
+
+ .card .geral{
+   text-shadow: 0 0 15px #000;
+  font-size: 12px;
+ }
+ 
+ 
+@keyframes animate
+{
+   0%,10%,100%
+   {
+      width: 0%;
+   }
+      70%,90%
+      {
+         width: 100%;
+      }
+}
+
+
+
+ section h2{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    text-shadow: 2px 1px 4px black;
+}
+
+section .cards{
+    display: flex;
+    color: #fff;
+    
+}
+
+section .cards h3{
+  color: #000;
+}
+
+section .cards .text-card{
+    background: #404040;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+section .cards .text-card h3{
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+
+ul{
+  list-style-type: none;
+
+}
+.footer{
+  background-color: #24262b;
+  padding: 50px 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.1s ease;
+}
+.footer-col{
+width: 30%;
+padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size:18px;
+  color: #fff;
+  text-transform:capitalize;
+  margin-bottom: 40px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #F9D664;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbb;
+  display: block;
+  transition: all 0.2s ease;
+}
+.footer-col ul li a:hover{
+  color: #fff;
+  padding-left: 15px;
+}
+.social{
+  margin-bottom: 65px;
+}
+.pdloja{
+  margin-bottom: 60px;
+}
+.pdcont{
+  margin-bottom: -15px;
+}
+.pdprod{
+  margin-bottom: 15px;
+}
+
+.footer-col .social a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.6s ease;
+}
+.footer-col .social a:hover{
+  color: #24262b;
+  background-color: #F9D664;
+}
+.menu-open .footer {
+background-color: transparent;
+}
+
+.menu-open .footer h4,
+.menu-open .footer ul li a {
+color: #fff;
+}
+
+.menu-open .footer .social a {
+background-color: rgba(255, 255, 255, 0.4);
+color: #fff;
+}
+
+.menu-open .footer .social a:hover {
+color: #24262b;
+background-color: #f3b76ed2;
+}
+.menu-open .footer {
+display: none;
+}
+
+
+@media (max-width: 900px){
+    section h1{
+        font-size: 40px;
+    }
+
+    section .cards{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+ position: relative;
+ transform: translateY(60px);
+ opacity: 0;
+ transition: all 1.5s ease;
+}
+
+.reveal.active{
+ transform: translateY(0px);
+ opacity: 1;
+}
+.direitos{
+  color: #bbbb;
+  font-size: 12px;
+  font-weight: 100;
+  margin-left: 42%;
+  margin-top: 3%;
+}
+.direitos:hover{
+  color: #fff;
+  font-size: 13px;
+  transition: all 0.6s;
+}
+
+
+html ::-webkit-scrollbar{
+   width: 0px;
+}
+
+
+
+
+

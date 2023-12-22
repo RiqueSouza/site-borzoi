@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&family=Playfair&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300;400;600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/begova');
+
+* {
+  margin: 0;
+   padding: 0;
+   box-sizing: border-box;   
+  }
+   
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html ::-webkit-scrollbar{
+    width: 0px;
+ }
+  
+   body {
+      min-height: 100%;
+      background-color: #E3DEE3;
+      font-family:'Faustina', serif;
+    }
+
+    /* Estilizações da área do produto*/
+    .container-produtos {
+      text-align: center;
+      margin-top: 100px;
+    }
+    
+    h1 {
+      font-size: 100px;
+      color: #333;
+      margin-bottom: 10px;
+     font-family: 'Old Standard TT', serif;
+      font-weight:400;
+    }
+    .category {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px auto;
+      margin-top: 100px;
+    }
+    
+    .product-card {
+      width: 300px;
+      height: 470px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      text-align: center;
+      margin: 20px auto;
+    }
+    
+    .product-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .product-title {
+      font-size: 28px;
+      color: #333333;
+      margin-bottom: 5px;
+      font-family: 'Begova', sans-serif;
+      font-weight: 400;
+    }
+    
+    .product-price {
+      font-size: 18px;
+      color:  #5a5252ea;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .price-container {
+      display: flex;
+      align-items: baseline;
+      margin-top: 10px;
+    }
+    
+    .original-price {
+      font-size: 14px;
+      color: #ff5555;
+      text-decoration: line-through;
+      margin-right: 10px;
+    }
+    
+    .sale-price {
+      font-size: 18px;
+      color:  #5a5252ea;
+      font-weight: bold;
+      margin-left: 35px;
+      margin-bottom: 10px;
+    }
+    
+    .price-line {
+      width: 0%;
+      height: 1px;
+      background-color: #ff5555;
+      margin-top: 5px;
+    }
+    
+    .product-description {
+      font-size: 14px;
+      color: #525252;
+      margin-bottom: 15px;
+      font-weight: 300;
+    }
+      
+    .product-card:hover{
+      transform: scale(1.15);
+      transition: all 1.3s ease-in-out;
+    }
+
+  
+
+/* Menu side-bar */  
+    a{
+      cursor: pointer;
+      text-decoration: none;
+      color: #000;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 70px;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 0 7px rgba(0, 0, 0, 1);
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      }
+      
+      nav .logo {
+      display: flex;
+      align-items: center;
+      margin: 0 24px;
+      font-family: 'Great Vibes', cursive
+      }
+
+      .options{
+        font-size:30px;
+        margin-left: 13%;
+        padding: 15px 10px;
+        cursor: pointer;
+        border-radius: 15px;
+        font-family: 'Great Vibes', cursive; 
+        color: #4A4346;
+      }
+      .options:hover{
+        background-color: #E3DEE3;
+        transition: all 0.6s;
+      }
+      .icon-opt{
+        font-size: 28px;
+        color: #161315;
+        font-weight: 400;
+        
+      }
+      nav .logo1{
+        display: flex;
+        align-items: center;
+        margin: 0 24px;
+        font-family: 'Great Vibes', cursive
+      } 
+      .logo .menu-icon {
+      color: #333;
+      font-size: 24px;
+      margin-right: 14px;
+      cursor: pointer;
+      }
+      .logo1 .menu-icon{
+        color: #333;
+        font-size: 30px;
+        margin-right: 14px;
+        cursor: pointer;
+      }
+      
+      .logo .logo-name {
+        color: #333;
+        font-size: 40px;
+        font-weight: 500;
+      margin-left: 20px;
+      }
+      .logo1 .logo-name1{
+        color: #333;
+        font-size: 30px;
+        font-weight: 500;
+}
+      nav .sidebar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100%;
+      width: 260px;
+      padding: 20px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+      background-color: #fff;
+      transition: all 0.4s ease;
+      }
+      nav.open .sidebar{
+        left: 0;
+      }
+      .sidebar .sidebar-content {
+        display: flex;
+        height: 90%;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 16px ;
+        font-size: 30px;
+      }
+      hr{
+        width: 85%;
+        margin-left: 18px;
+      }
+      .sidebar-content .list {
+      list-style-type: none;
+      }
+      
+      .list .nav-link {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      }
+      
+      .nav-link:hover {
+      background-color: #E3DEE3;
+      transition: all 0.3s;
+ 
+      }
+      
+      .nav-link .icon {
+      margin-right: 14px; 
+      font-size: 20px;
+      color: #161315;
+      }
+      
+      .nav-link .link {
+      font-size: 22px;
+      color: #161315;
+      font-weight: 400;
+      
+      }
+
+      .list{
+        align-items: center;
+        margin: 8px 0;
+        padding: 14px 12px;
+        border-radius: 10px;
+        text-decoration: none;
+        }
+        
+        .list:hover {
+        background-color: #E3DEE3;
+                transition: all 0.3s;
+                
+        }
+        .list .icon {
+        margin-right: 14px; 
+        font-size: 20px;
+        color: #161315;
+        }
+        
+        .list {
+        font-size: 22px;
+        color: #161315;
+        font-weight: 400;
+        
+        }
+        
+        .lists.icon,
+        .lists{
+        color: #fff;
+        }
+   
+ 
+
+      /* Sistema de subtópicos*/
+      
+      .subtopics {
+      display: none;
+      padding-left: 30px;
+      }
+      
+      .subtopics .subtopic {
+      margin-bottom: 8px;
+      font-size: 18px;
+      list-style-type: none;
+      }
+      .subtopics a {
+        display: block;
+        padding: 4px 0;
+        color: #161315;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .overlay{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 200%;
+        opacity: 0;
+        background: rgba(0,0,0,0.35);
+        transition: all 0.4s ease;
+        pointer-events: none;
+      
+      }
+      nav.open ~ .overlay{ 
+        left: 260px;
+        opacity: 1;
+        pointer-events: auto;
+      }
+    
+      /* Estilização da barra de pesquisa */
+      .search-container {
+        border-radius: 5px;
+        width: 250px;
+        position: relative;
+        box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.05);
+        margin-left: 20%;
+      }
+      
+      #search-input {
+        height: 50px;
+        max-width: 800px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 0 90px 0 20px;
+        font-size: 17px;
+        box-shadow: 0 1px 5px   rgba(0, 0, 0, 0.1);
+      }
+  
+      .search-container .icon{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        left: 255px;
+        width: 55px;
+        text-align: center;
+        line-height: 55px;
+        font-size: 25px;
+        color: #644bff;
+        cursor: pointer;
+      }
+      
+      /* Footer responsivo e estilizado */
+      .contf{
+        max-width: 1170px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    ul{
+        list-style-type: none;
+    
+    }
+    .footer{
+        background-color: #24262b;
+        padding: 70px 0;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+    }
+    .footer-col{
+    width: 25%;
+    padding: 0 15px;
+    }
+    
+    .footer-col h4{
+        font-size:18px;
+        color: #fff;
+        text-transform:capitalize;
+        margin-bottom: 40px;
+        font-weight: 500;
+        position: relative;
+    }
+    
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #F9D664;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbb;
+        display: block;
+        transition: all 0.2s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #fff;
+        padding-left: 15px;
+    }
+    .footer-col .social a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.4);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        transition: all 0.6s ease;
+    }
+    .footer-col .social a:hover{
+        color: #24262b;
+        background-color: #F9D664;
+    }
+    .menu-open .footer {
+      background-color: transparent;
+    }
+    
+    .menu-open .footer h4,
+    .menu-open .footer ul li a {
+      color: #fff;
+    }
+    
+    .menu-open .footer .social a {
+      background-color: rgba(255, 255, 255, 0.4);
+      color: #fff;
+    }
+    
+    .menu-open .footer .social a:hover {
+      color: #24262b;
+      background-color: #f3b76ed2;
+    }
+    .menu-open .footer {
+      display: none;
+    }
+    .direitos{
+      color: #bbbb;
+      font-size: 12px;
+      font-weight: 100;
+      margin-left: 42%;
+      margin-top: 3%;
+      cursor:default;
+    }
+    .direitos:hover{
+      color: #fff;
+      font-size: 14px;
+      transition: all 0.4s; 
+    }
+
+    
+    /*Responsividade*/
+    @media(max-width:767px){
+        .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
+            }
+            
+    }
+    @media(max-width:574px){
+        .footer-col{
+            width: 100%;
+            margin-bottom: 30px;
+            }
+            
+    }
+
+    .reveal{
+      transform: translateY(60px);
+      opacity: 0;
+      transition: all 1.5s ease;
+      z-index: 2;
+     }
+     
+     .reveal.active{
+      transform: translateY(0px);
+      opacity: 1;
+      z-index: 2;
+     }

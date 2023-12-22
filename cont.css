@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&family=Playfair&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300;400;600&family=Old+Standard+TT&display=swap');
+
+
+* {
+  margin: 0;
+   padding: 0;
+   box-sizing: border-box;   
+  }
+   
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html ::-webkit-scrollbar{
+    width: 0px;
+ }  
+
+    /* Design da div principal */
+    .container {
+      max-width: 1000px;
+      margin-left: 55px;
+      text-align: justify;
+      margin-top: 100px;
+      background-color: #fff;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+    
+    h1 {
+      font-size: 72px;
+      margin-bottom: 20px;
+      color: #333;
+      font-family: 'Old Standard TT', serif;
+      font-weight:lighter;
+    }
+    
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    
+    .contact-list li {
+      margin-bottom: 10px;
+      font-size: 34px;
+    }
+    
+    .contact-list i {
+      margin-right: 10px;
+      font-size: 34px;
+      color: #333;
+    }
+    
+    .contact-list a {
+      display: inline-block;
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .contact-list a:hover {
+      color: #ff6600;
+    }
+    
+    .contact-list .phone {
+      font-weight: bold;
+    }
+    
+    .contact-list .email {
+      font-style: italic;
+    }
+    
+    .contact-list .social-media {
+      font-size: 28px;
+    }
+    
+    .contact-list .social-media a {
+      margin: 0 10px;
+      color: #333;
+    }
+    
+    .contact-list .social-media a:hover {
+      color: #ff6600;
+    }
+       
+        
+    
+    
+      
+      /* Footer responsivo e estilizado */
+      .contf{
+        max-width: 1170px;
+        margin: auto;
+        margin-top: 90%;
+    }
+    .footer{
+      margin-top: 10.5%;
+    }
